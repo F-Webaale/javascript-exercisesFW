@@ -1,4 +1,11 @@
-const sumAll = function() {
+const sumAll = function(...num) {
+    
+     let sum = num.reduce(myFunction);
+        function myFunction(total, value, index, array) {
+            for (i=value; i<=value; i++) {
+                return total + value;
+            }
+        }
 
 };
 
