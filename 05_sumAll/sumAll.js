@@ -10,15 +10,24 @@
 };*/
 
 
+
 function sumAll(a,b) {
     let sum = 0;
-    for(let i=a; i<=b; i++) {
+    
+    if (a<=b) {
+        for(let i=a; i<=b; i++) {
         sum=sum+i;
         }
-        return sum;
-}
+    }
 
-sumAll(1,5)
+    else {
+        for(let i=a; i>=b; i--) {
+            sum=sum+i;
+            }
+    } 
+    
+    return sum;
+}
 
 
 // Do not edit below this line
