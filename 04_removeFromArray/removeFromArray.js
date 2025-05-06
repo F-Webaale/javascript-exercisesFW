@@ -1,12 +1,14 @@
-function removeFromArray(arr, ...num) {
-  const newArray = [];
-  arr.forEach(myFunction) 
-      function myFunction(value, index, array) {
-          if (!num.includes(value)){
+function removeFromArray(arr, ...arg) {
+  let newArray = [];
+  arr.forEach(myFn);
+  
+  function myFn (value, index, array) {
+      if(!arg.includes(value)){
           newArray.push(value);
-      }}
-  return newArray;
+      }
   }
+  return newArray;
+}
 
 // Do not edit below this line
 module.exports = removeFromArray;
