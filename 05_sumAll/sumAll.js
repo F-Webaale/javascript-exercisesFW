@@ -13,7 +13,7 @@
 
 function sumAll(a,b) {
     let sum = 0;
-    if (a<0 || b<0) {
+    if ((a<0 || b<0) ||(!Number.isInteger(a)||!Number.isInteger(b))) {
         return "ERROR";
     }
 
